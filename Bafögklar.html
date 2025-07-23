@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BAföG Klar!</title>
+  <meta name="description" content="Vertrauenswürdige Unterstützung für deinen BAföG-Antrag: Beratung, Checklisten und Hilfe rund um BAföG, schnell und transparent." />
+  <style>
+    body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background: #f5f7fa; color: #222; margin: 0; line-height: 1.6; }
+    header { background: #0a3d62; color: #fff; text-align: center; padding: 70px 20px; background-image: url('https://source.unsplash.com/1600x400/?students,money'); background-size: cover; background-position: center; }
+    header h1 { margin: 0; font-size: 42px; letter-spacing: 1px; }
+    header p { font-size: 20px; max-width: 600px; margin: 20px auto; background: rgba(0,0,0,0.4); padding: 10px; border-radius: 5px; }
+    header a { display: inline-block; margin-top: 30px; background: #1dd1a1; color: #fff; padding: 15px 35px; text-decoration: none; border-radius: 50px; font-weight: bold; transition: background 0.3s; }
+    header a:hover { background: #10ac84; }
+    section { max-width: 800px; margin: 60px auto; background: #fff; padding: 50px; border-radius: 8px; box-shadow: 0 8px 30px rgba(0,0,0,0.08); }
+    section img { max-width: 100%; border-radius: 8px; margin-bottom: 20px; }
+    h2 { font-size: 26px; color: #0a3d62; margin-bottom: 20px; }
+    ul { list-style: none; padding: 0; }
+    ul li { margin-bottom: 12px; padding-left: 30px; position: relative; }
+    ul li::before { content: '✔'; position: absolute; left: 0; color: #1dd1a1; font-weight: bold; }
+    footer { background: #0a3d62; color: #fff; text-align: center; padding: 30px; font-size: 14px; }
+    form label { display: block; margin-bottom: 8px; font-weight: bold; color: #0a3d62; }
+    form input, form textarea, form select { width: 100%; padding: 15px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 4px; font-size: 15px; }
+    form button { background: #1dd1a1; color: #fff; border: none; padding: 15px 35px; border-radius: 50px; cursor: pointer; font-size: 16px; font-weight: bold; transition: background 0.3s; }
+    form button:hover { background: #10ac84; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BAföG Klar!</h1>
+    <p>Vertrauenswürdige Unterstützung rund um deinen BAföG-Antrag – transparent, persönlich und auf Augenhöhe.</p>
+    <a href="#kontakt">Kostenlose Anfrage stellen</a>
+  </header>
+
+  <section>
+    <img src="https://source.unsplash.com/800x400/?student,finance" alt="Student mit Finanzen">
+    <h2>So helfe ich dir</h2>
+    <ul>
+      <li>Beratung per Video-Call, Telefon oder E-Mail</li>
+      <li>Verständliche Erklärungen Schritt für Schritt</li>
+      <li>Checklisten & individuelle Hinweise</li>
+      <li>Keine versteckten Kosten – alles transparent</li>
+      <li>Keine Datenspeicherung – deine Daten bleiben bei dir</li>
+    </ul>
+  </section>
+
+  <section>
+    <img src="https://source.unsplash.com/800x400/?budget,student" alt="Budgetplanung">
+    <h2>Transparenz & Sicherheit</h2>
+    <p>Ich bin kein offizielles Amt und kein Vermittler. Du erledigst deinen Antrag selbst – ich unterstütze dich nur beratend, damit du keine Fehler machst.</p>
+    <p>Datenschutz ist mir wichtig: Alle deine Informationen gehören nur dir.</p>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontaktiere mich</h2>
+    <form action="https://formspree.io/f/meineformid" method="POST">
+      <label for="name">Dein Name</label>
+      <input type="text" id="name" name="name" placeholder="Dein Name" required>
+
+      <label for="email">Deine E-Mail</label>
+      <input type="email" id="email" name="email" placeholder="Deine E-Mail" required>
+
+      <label for="service">Service wählen</label>
+      <select id="service" name="service" required>
+        <option value="">Bitte wähle deinen Service</option>
+        <option value="beratung">Beratung zu BAföG</option>
+        <option value="check">Antrags-Check</option>
+        <option value="hilfe">Allgemeine Anfrage</option>
+      </select>
+
+      <label for="message">Deine Nachricht</label>
+      <textarea id="message" name="message" placeholder="Deine Nachricht" rows="5"></textarea>
+
+      <button type="submit">Nachricht senden</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 BAföG Klar! | Impressum | Datenschutz
+  </footer>
+</body>
+</html>
